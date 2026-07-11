@@ -23,6 +23,13 @@ body {
     transition: background 0.3s;
     
 }
+.btn-primary.lg {
+    padding: 14px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 280px;
+    display: inline-block; 
+}
 .btn-outline {
     background-color: transparent;
     border: 1px solid #2563EB;
@@ -240,3 +247,60 @@ nav {
     color: #1d5bf7;
     font-weight: bold;
 }
+/* AI Generated FAQ Section */
+.faq-section {
+    padding: 80px 24px;
+    background: #f3f0ff; 
+}
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px dashed #8b5cf6;
+    border-radius: 16px;
+    padding: 40px;
+    background: #ffffff;
+}
+.faq-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #5b21b6;
+    margin-bottom: 32px;
+}
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.faq-item h4 {
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 8px;
+}
+.faq-item p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 40px 24px;
+    background: #0D1B2A;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer-logo {
+    height: 22px;
+}
+footer p {
+    font-size: 13px;
+    color: #888888;
+}
+
