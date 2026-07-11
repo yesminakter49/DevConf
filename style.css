@@ -20,9 +20,26 @@ body {
     border-radius: 6px;
     font-size: 14px;
     font-weight: 500;
-    cursor: pointer;
     transition: background 0.3s;
     
+}
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #2563EB;
+    color: #1d5bf7;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.btn-outline.contact{
+    border-color: #191a1b;
+    color:#0D1B2A
+}
+.btn-outline:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
 }
 .section-title {
     text-align: center;
@@ -140,4 +157,86 @@ nav {
 .speaker-info p {
     color: #666666;
     font-size: 14px;
+}
+/* Pricing Section */
+.pricing-section {
+    background-color: #fafafa;
+    padding: 80px 24px;
+}
+.pricing-subtitle {
+    text-align: center;
+    color: #666666;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.pricing-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+.pricing-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pricing-card.pro {
+    background: #0b132b;
+    color: white;
+    border: none;
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.plan-name {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #666666;
+    display: block;
+    margin-bottom: 12px;
+}
+.pricing-card.pro .plan-name {
+    color: #94a3b8;
+}
+.price {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+.per-person {
+    font-size: 13px;
+    color: #666666;
+    display: block;
+    margin-bottom: 32px;
+}
+.pricing-card.pro .per-person {
+    color: #94a3b8;
+}
+.features {
+    list-style: none;
+    margin-bottom: 40px;
+}
+.features li {
+    font-size: 14px;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 20px;
+    color: #444444;
+}
+.pricing-card.pro .features li {
+    color: #cbd5e1;
+}
+.features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1d5bf7;
+    font-weight: bold;
 }
