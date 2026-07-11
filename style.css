@@ -1,4 +1,4 @@
-/* Global Reset */
+/* For Global setup */
 *{
     margin: 0;
     padding: 0;
@@ -55,4 +55,36 @@ nav {
 }
 .nav-links a:hover {
     color: #111111;
+}
+/* Hero part*/
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('./assets/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    min-height: 786px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 24px;
+}
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+.hero-content h1 span {
+    font-style: italic;
+    font-weight: 400;
+}
+.hero-subtitle {
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e2e8f0;
 }
